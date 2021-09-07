@@ -1,12 +1,6 @@
-# Service
+# Subweb
 
-Kotlin microservice template produces self-executable jar application. For brevity, double-space
-formatting is used. [`Ktor`](https://ktor.io/) is included to mock Digital Ocean healthy checks.
-
-## Usage
-
-Make sure you are signed in to your GitHub account, then just
-click [`here`](https://github.com/demidko/service/generate) to use template.
+I have accumulated many useful bookmarks that, due to their number, are no longer ordered in the visible structures of the browser, while I regularly need one or the other, and Google cannot help me find sites again. So I got the idea to create my own small part of the Internet ...
 
 ## Build
 

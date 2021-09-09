@@ -1,9 +1,14 @@
 spec:
-  name: service
-  services:
+  name: subweb
+  workers:
     - name: backend
       dockerfile_path: Dockerfile
       github:
-        repo: demidko/service
+        repo: demidko/telegram
         branch: main
         deploy_on_push: true
+      envs:
+        - key: TELEGRAM_TOKEN
+          type: SECRET
+        - key: REDIS_STRING
+          type: SECRET

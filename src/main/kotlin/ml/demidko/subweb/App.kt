@@ -1,4 +1,15 @@
+import ezvcard.Ezvcard
+import ezvcard.VCard
+import java.io.File
+
 fun main() {
+  val lst = Ezvcard.parse(File("bookmarks/contacts-2019.vcf"))
+
+  println(lst.all().size)
+  lst.all().forEach {
+    println(it.formattedName?.value ?: it.structuredName)
+  }
+
   /**
    * Функции бота:
    * 1. дамп сущностей

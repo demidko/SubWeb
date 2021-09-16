@@ -1,4 +1,4 @@
-package ml.demidko.subweb.text.types
+package ml.demidko.subweb.data.types
 
 class RussianNumber(s: String) :
   CharSequence by s

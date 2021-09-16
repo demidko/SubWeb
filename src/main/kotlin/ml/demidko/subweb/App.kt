@@ -1,28 +1,13 @@
 import ezvcard.Ezvcard
 import java.io.File
 
-class Lol(x: String) : CharSequence by x.let({ "" })
 
 fun main() {
 
-
-  val lst = Ezvcard.parse(File("bookmarks/contacts-2019.vcf"))
-
-  val s = ""
-
-  s
-    .trim()
-    .lowercase()
-    .replace("(", "")
-    .replace(")", "")
-    .replace("-", "")
-    .let { "" }
-
-  println(lst.all().size)
-  lst.all().forEach {
-    println(it)
-    println()
-  }
+  /**
+   * Описываем типы как нам удобно
+   * Делаем часть из них тегами
+   */
 
   /**
    * Функции бота:

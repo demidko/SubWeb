@@ -1,12 +1,22 @@
 import ezvcard.Ezvcard
 import java.io.File
-import java.util.concurrent.Executors
+
+class Lol(x: String) : CharSequence by x.let({ "" })
 
 fun main() {
 
 
-
   val lst = Ezvcard.parse(File("bookmarks/contacts-2019.vcf"))
+
+  val s = ""
+
+  s
+    .trim()
+    .lowercase()
+    .replace("(", "")
+    .replace(")", "")
+    .replace("-", "")
+    .let { "" }
 
   println(lst.all().size)
   lst.all().forEach {

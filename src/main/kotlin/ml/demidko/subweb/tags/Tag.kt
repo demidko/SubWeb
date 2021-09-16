@@ -1,7 +1,6 @@
 package ml.demidko.subweb.tags
 
-import ml.demidko.subweb.data.types.NormalizedName
-import ml.demidko.subweb.data.types.RussianNumber
+import ml.demidko.subweb.data.types.*
 import java.io.Serializable
 
 /**
@@ -12,4 +11,8 @@ sealed interface Tag : Serializable {
   class Person(val name: NormalizedName) : Tag
   class Organization(val name: NormalizedName) : Tag
   class Note(val text: String) : Tag
+  class Password(val test: String) : Tag
+  class Resource(val url: NormalizedUrl) : Tag
+  class Passport(val id: RussianPassport) : Tag
+  class Position(val title: NormalizedPosition) : Tag
 }

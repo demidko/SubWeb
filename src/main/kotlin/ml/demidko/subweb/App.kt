@@ -3,6 +3,9 @@ import java.io.File
 import java.util.concurrent.Executors
 
 fun main() {
+
+
+
   val lst = Ezvcard.parse(File("bookmarks/contacts-2019.vcf"))
 
   println(lst.all().size)
